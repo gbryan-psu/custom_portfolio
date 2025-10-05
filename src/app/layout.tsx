@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { Comfortaa, Roboto_Mono } from "next/font/google";
+import { Roboto_Mono, Quicksand } from "next/font/google";
 import "./app.css";
+import Navbar from "@/components/navbar";
 
-const comfortaa = Comfortaa({
-  variable: "--font-comfortaa",
+const quicksand = Quicksand({
+  variable: "--font-quicksand",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -63,7 +65,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${comfortaa.variable} ${robotoMono.variable} antialiased`}>{children}</body>
+      <body className={`${quicksand.variable} ${robotoMono.variable} antialiased`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
