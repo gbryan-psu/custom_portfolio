@@ -1,24 +1,31 @@
 import type { Metadata } from "next";
-import { Roboto_Mono, Quicksand } from "next/font/google";
+import { IBM_Plex_Mono, Manrope, Sora } from "next/font/google";
 import "./app.css";
-import Navbar from "@/components/navbar";
+import SiteHeader from "@/components/site-header";
 
-const quicksand = Quicksand({
-  variable: "--font-quicksand",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
-const robotoMono = Roboto_Mono({
-  variable: "--font-roboto-mono",
+const sora = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const plexMono = IBM_Plex_Mono({
+  variable: "--font-plex-mono",
+  subsets: ["latin"],
+  weight: ["400", "500"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Gabien Bryan - Portfolio & Playground",
-  description: "The digital home of Gabien Bryan - code, projects, and creations.",
+  title: "Gabien Bryan | Software Engineer",
+  description:
+    "A multi-page portfolio for Gabien Bryan featuring software engineering work, background, interests, and contact details.",
   keywords: [
     "Gabien Bryan",
     "Web Engineer",
@@ -42,17 +49,18 @@ export const metadata: Metadata = {
   authors: [{ name: "Gabien Bryan", url: "https://gabien-bryan.com" }],
   creator: "Gabien Bryan",
   openGraph: {
-    title: "Gabien Bryan - Portfolio & Playground",
-    description: "Explore the projects, portfolio, and creative coding space of Gabien Bryan.",
+    title: "Gabien Bryan | Software Engineer",
+    description:
+      "Explore the portfolio, projects, background, and contact details of Gabien Bryan.",
     url: "https://gabien-bryan.com",
-    siteName: "Gabien Bryan - Portfolio & Playground",
+    siteName: "Gabien Bryan Portfolio",
     type: "website",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Gabien Bryan - Portfolio & Playground",
+        alt: "Gabien Bryan portfolio preview",
       },
     ],
   },
@@ -65,9 +73,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${quicksand.variable} ${robotoMono.variable} antialiased`}>
-        <Navbar />
-        {children}
+      <body className={`${manrope.variable} ${sora.variable} ${plexMono.variable} antialiased`}>
+        <div className="site-shell">
+          <SiteHeader />
+          {children}
+        </div>
       </body>
     </html>
   );
