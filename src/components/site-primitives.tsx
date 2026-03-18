@@ -3,25 +3,6 @@ import type { LucideIcon } from "lucide-react";
 import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export function PageFrame({
-  children,
-  className,
-}: Readonly<{
-  children: React.ReactNode;
-  className?: string;
-}>) {
-  return (
-    <main
-      className={cn(
-        "relative mx-auto flex w-full max-w-7xl flex-col px-4 pb-16 sm:px-6 lg:px-8",
-        className
-      )}
-    >
-      {children}
-    </main>
-  );
-}
-
 export function SectionIntro({
   eyebrow,
   title,
@@ -43,25 +24,6 @@ export function SectionIntro({
       </h2>
       <p className="text-sm leading-7 text-[var(--color-text-muted)] sm:text-base">{description}</p>
     </div>
-  );
-}
-
-export function Panel({
-  children,
-  className,
-}: Readonly<{
-  children: React.ReactNode;
-  className?: string;
-}>) {
-  return (
-    <section
-      className={cn(
-        "relative overflow-hidden border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.045),rgba(255,255,255,0.02))] shadow-[var(--shadow-panel)]",
-        className
-      )}
-    >
-      {children}
-    </section>
   );
 }
 
@@ -133,7 +95,7 @@ export function PageHero({
   aside?: React.ReactNode;
 }>) {
   return (
-    <Panel className="mt-8 px-6 py-10 sm:px-8 lg:px-10">
+    <section className="basic-panel mt-8 px-6 py-10 sm:px-8 lg:px-10">
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px] lg:items-end">
         <div className="space-y-5">
           <p className="font-mono text-[0.72rem] tracking-[0.38em] text-[var(--color-mint)] uppercase">
@@ -152,6 +114,6 @@ export function PageHero({
           </div>
         ) : null}
       </div>
-    </Panel>
+    </section>
   );
 }

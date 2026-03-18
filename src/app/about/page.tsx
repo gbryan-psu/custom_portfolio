@@ -1,9 +1,10 @@
-import { PageFrame, PageHero, Panel, SectionIntro } from "@/components/site-primitives";
+import { PageHero, SectionIntro } from "@/components/site-primitives";
+import { PageMain } from "@/components/general/pageMain";
 import { aboutHighlights } from "@/content/site";
 
 export default function AboutPage() {
   return (
-    <PageFrame className="pt-8">
+    <PageMain className="background-effect">
       <PageHero
         eyebrow="About"
         title="A systems-minded engineer who cares about craft, clarity, and the people maintaining the code next."
@@ -21,7 +22,7 @@ export default function AboutPage() {
         }
       />
 
-      <Panel className="mt-8 px-6 py-8 sm:px-8">
+      <section className="basic-panel mt-8 px-6 py-8 sm:px-8">
         <div className="grid gap-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
           <SectionIntro
             eyebrow="How I work"
@@ -40,7 +41,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </Panel>
-    </PageFrame>
+      </section>
+    </PageMain>
   );
 }

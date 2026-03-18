@@ -1,9 +1,10 @@
-import { PageFrame, PageHero, Panel, SectionIntro } from "@/components/site-primitives";
+import { PageHero, SectionIntro } from "@/components/site-primitives";
+import { PageMain } from "@/components/general/pageMain";
 import { projectsHighlights } from "@/content/site";
 
 export default function ProjectsPage() {
   return (
-    <PageFrame className="pt-8">
+    <PageMain className="pt-8">
       <PageHero
         eyebrow="Projects"
         title="Selected work, technical decisions, and the foundation for a stronger case-study section."
@@ -20,7 +21,7 @@ export default function ProjectsPage() {
         }
       />
 
-      <Panel className="mt-8 px-6 py-8 sm:px-8">
+      <section className="mt-8 px-6 py-8 sm:px-8">
         <SectionIntro
           eyebrow="Starter structure"
           title="A clean foundation for turning project bullets into real narratives."
@@ -39,7 +40,7 @@ export default function ProjectsPage() {
             </article>
           ))}
         </div>
-      </Panel>
-    </PageFrame>
+      </section>
+    </PageMain>
   );
 }

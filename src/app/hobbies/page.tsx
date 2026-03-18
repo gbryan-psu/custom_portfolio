@@ -1,9 +1,10 @@
-import { PageFrame, PageHero, Panel, SectionIntro } from "@/components/site-primitives";
+import { PageHero, SectionIntro } from "@/components/site-primitives";
+import { PageMain } from "@/components/general/pageMain";
 import { hobbiesHighlights } from "@/content/site";
 
 export default function HobbiesPage() {
   return (
-    <PageFrame className="pt-8">
+    <PageMain className="pt-8">
       <PageHero
         eyebrow="Hobbies"
         title="A place for the interests and side quests that feed better product instincts."
@@ -18,7 +19,7 @@ export default function HobbiesPage() {
         }
       />
 
-      <Panel className="mt-8 px-6 py-8 sm:px-8">
+      <section className="mt-8 px-6 py-8 sm:px-8">
         <SectionIntro
           eyebrow="Outside of work"
           title="Interests can sharpen engineering judgment too."
@@ -38,7 +39,7 @@ export default function HobbiesPage() {
             </article>
           ))}
         </div>
-      </Panel>
-    </PageFrame>
+      </section>
+    </PageMain>
   );
 }

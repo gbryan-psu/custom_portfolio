@@ -1,23 +1,17 @@
 import Link from "next/link";
 import { ArrowDown, ArrowRight } from "lucide-react";
-import { HomeOrnaments } from "@/components/home-ornaments";
-import {
-  NavigationCard,
-  PageFrame,
-  Panel,
-  SectionIntro,
-  SignalCard,
-} from "@/components/site-primitives";
+import { BackgroundEffects } from "@/components/home/backgroundEffects";
+import { PageMain } from "@/components/general/pageMain";
+import { NavigationCard, SectionIntro, SignalCard } from "@/components/site-primitives";
 import { homeNavigationCards, homeSignals, siteMeta } from "@/content/site";
 
 export default function HomePage() {
   return (
-    <PageFrame className="gap-0 pt-8 sm:pt-10">
-      <section className="hero-band relative min-h-[calc(100vh-8rem)] overflow-hidden pt-8 pb-10">
-        <HomeOrnaments />
-
-        <div className="relative z-10 mx-auto flex min-h-[34rem] items-center py-6">
-          <Panel className="hero-panel mx-auto w-full max-w-5xl px-6 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14">
+    <PageMain>
+      <section className="background-effect">
+        <BackgroundEffects />
+        <div className="relative z-10 mx-auto flex min-h-[34rem] animate-fade-in items-center justify-center py-10 pb-45 opacity-0">
+          <div className="main-panel mx-auto w-full max-w-5xl px-6 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14">
             <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_260px] lg:items-end">
               <div className="space-y-8">
                 <div className="space-y-4">
@@ -28,8 +22,10 @@ export default function HomePage() {
                     <span className="section-kicker-line hidden sm:block" />
                   </div>
                   <h1 className="max-w-3xl font-display text-5xl leading-[0.96] font-semibold tracking-[-0.07em] text-white sm:text-6xl lg:text-7xl">
-                    <span className="block text-white/92">Building thoughtful, reliable</span>
-                    <span className="hero-name block">software experiences.</span>
+                    <span className="block text-white/92">
+                      Passion for building thoughtful, reliable
+                    </span>
+                    <span className="text-gradient block">software experiences.</span>
                   </h1>
                 </div>
 
@@ -77,19 +73,20 @@ export default function HomePage() {
                   </p>
                 </div>
               </div>
-            </div>
-          </Panel>
-        </div>
 
-        <div className="relative z-10 mt-8 flex items-center gap-3 text-white/52">
-          <span className="font-mono text-[0.68rem] tracking-[0.34em] uppercase">Scroll</span>
-          <span className="h-px w-16 bg-white/16" />
-          <ArrowDown size={14} className="animate-[drift_4s_ease-in-out_infinite]" />
+              <div className="relative z-10 flex items-center gap-2 text-white/52">
+                <span className="h-px w-10 bg-white/16" />
+                <span className="font-mono text-[0.68rem] tracking-[0.34em] uppercase">Scroll</span>
+                <ArrowDown size={14} className="animate-[drift_4s_ease-in-out_infinite]" />
+                <span className="h-px w-10 bg-white/16" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="overview-band relative py-10 sm:py-12">
-        <Panel className="overview-panel relative z-10 px-6 py-8 sm:px-8 sm:py-10 lg:px-10">
+      <section className="relative">
+        <div className="overview-panel relative z-10 animate-fade-in px-6 py-8 sm:px-8 sm:py-10 lg:px-10">
           <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
             <div className="space-y-8">
               <SectionIntro
@@ -131,8 +128,8 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </Panel>
+        </div>
       </section>
-    </PageFrame>
+    </PageMain>
   );
 }

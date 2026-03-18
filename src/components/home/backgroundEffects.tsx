@@ -1,29 +1,16 @@
 import type { CSSProperties } from "react";
+import { Glow, Line, Shape } from "@/lib/types";
 
-export function HomeOrnaments() {
-  const lines = [
+export function BackgroundEffects() {
+  const lines: Line[] = [
     { top: "10%", left: "-4%", width: "38rem", rotate: "-14deg", delay: "0.2s" },
     { top: "21%", left: "62%", width: "26rem", rotate: "26deg", delay: "0.45s" },
     { top: "48%", left: "-2%", width: "22rem", rotate: "18deg", delay: "0.58s" },
-    {
-      top: "63%",
-      left: "46%",
-      width: "33rem",
-      rotate: "-30deg",
-      delay: "0.72s",
-      mobile: "hide",
-    },
-    {
-      top: "74%",
-      left: "8%",
-      width: "24rem",
-      rotate: "-8deg",
-      delay: "0.84s",
-      mobile: "hide",
-    },
+    { top: "63%", left: "46%", width: "33rem", rotate: "-30deg", delay: "0.72s", mobile: "hide" },
+    { top: "74%", left: "8%", width: "24rem", rotate: "-8deg", delay: "0.84s", mobile: "hide" },
   ];
 
-  const shapes = [
+  const shapes: Shape[] = [
     { kind: "triangle", top: "12%", left: "10%", size: "5.75rem", rotate: "22deg", delay: "0.5s" },
     {
       kind: "square",
@@ -62,7 +49,7 @@ export function HomeOrnaments() {
     },
   ] as const;
 
-  const glows = [
+  const glows: Glow[] = [
     { top: "18%", left: "24%", size: "11rem", tone: "mint", delay: "0.25s" },
     {
       top: "30%",
@@ -75,7 +62,7 @@ export function HomeOrnaments() {
   ] as const;
 
   return (
-    <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+    <div aria-hidden className="pointer-events-none absolute inset-0 flex overflow-hidden">
       {lines.map((line) => (
         <div
           key={`${line.top}-${line.left}-${line.width}`}
@@ -97,7 +84,7 @@ export function HomeOrnaments() {
           key={`${shape.kind}-${shape.top}-${shape.left}`}
           className="ambient-shape"
           data-kind={shape.kind}
-          data-mobile={shape.mobile}
+          data-mobile={shape?.mobile}
           style={
             {
               "--shape-top": shape.top,

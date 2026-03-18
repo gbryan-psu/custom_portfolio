@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { PageFrame, PageHero, Panel, SectionIntro } from "@/components/site-primitives";
+import { PageHero, SectionIntro } from "@/components/site-primitives";
+import { PageMain } from "@/components/general/pageMain";
 import { siteMeta } from "@/content/site";
 
 export default function ContactPage() {
   return (
-    <PageFrame className="pt-8">
+    <PageMain>
       <PageHero
         eyebrow="Contact"
         title="A direct, low-friction way to start a conversation."
@@ -22,7 +23,7 @@ export default function ContactPage() {
         }
       />
 
-      <Panel className="mt-8 px-6 py-8 sm:px-8">
+      <section className="mt-8 px-6 py-8 sm:px-8">
         <div className="grid gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
           <SectionIntro
             eyebrow="Reach out"
@@ -49,7 +50,7 @@ export default function ContactPage() {
             </article>
           </div>
         </div>
-      </Panel>
-    </PageFrame>
+      </section>
+    </PageMain>
   );
 }

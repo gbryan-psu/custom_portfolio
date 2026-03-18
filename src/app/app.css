@@ -13,14 +13,6 @@
   --color-line: rgba(255, 255, 255, 0.1);
   --shadow-panel: 0 32px 90px rgba(0, 0, 0, 0.46), 0 10px 30px rgba(0, 0, 0, 0.34);
   --shadow-panel-hover: 0 38px 105px rgba(0, 0, 0, 0.54), 0 16px 40px rgba(0, 0, 0, 0.38);
-  --hero-band:
-    radial-gradient(circle at 18% 22%, rgba(124, 255, 221, 0.1), transparent 24rem),
-    radial-gradient(circle at 82% 18%, rgba(110, 183, 255, 0.14), transparent 28rem),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 36%),
-    linear-gradient(180deg, #06080b 0%, #040507 54%, #020304 100%);
-  --overview-band:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 28%),
-    linear-gradient(180deg, #0b0e13 0%, #090b10 100%);
 }
 
 @theme inline {
@@ -29,10 +21,8 @@
   --font-sans: var(--font-manrope);
   --font-display: var(--font-sora);
   --font-mono: var(--font-plex-mono);
-}
 
-* {
-  box-sizing: border-box;
+  --animate-fade-in: fade-in 1s ease-out both;
 }
 
 html {
@@ -54,79 +44,42 @@ a {
   text-decoration: none;
 }
 
-.site-shell {
-  position: relative;
-  min-height: 100vh;
-  isolation: isolate;
-}
-
-.site-shell::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent 22%);
-  mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0.22), transparent 92%);
-  opacity: 0.12;
-}
-
-.site-shell::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -3;
+.background-effect {
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 18%),
+    radial-gradient(circle at 18% 22%, rgba(124, 255, 221, 0.1), transparent 24rem),
+    radial-gradient(circle at 82% 18%, rgba(110, 183, 255, 0.14), transparent 28rem),
     linear-gradient(
       90deg,
-      rgba(124, 255, 221, 0.045),
+      rgba(124, 255, 221, 0.03),
       transparent 28%,
       transparent 72%,
-      rgba(110, 183, 255, 0.05)
+      rgba(110, 183, 255, 0.03)
     );
-}
-
-.hero-band {
   position: relative;
-  margin-inline: calc(50% - 50vw);
-  padding-inline: calc(50vw - 50%);
-  background: var(--hero-band);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.04);
+  isolation: isolate;
+  margin-top: -6.5rem;
+  min-height: calc(100vh + 6.5rem);
+  padding-top: 6.5rem;
 }
 
-.hero-band::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0;
-  height: 9rem;
-  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.45));
-  pointer-events: none;
-}
-
-.overview-band {
-  position: relative;
-  margin-inline: calc(50% - 50vw);
-  padding-inline: calc(50vw - 50%);
-  background: var(--overview-band);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.04),
-    0 -24px 60px rgba(0, 0, 0, 0.28);
-}
-
-.hero-panel {
+.main-panel {
   backdrop-filter: blur(18px);
   background:
     linear-gradient(155deg, rgba(255, 255, 255, 0.06), transparent 34%),
     linear-gradient(180deg, rgba(18, 21, 27, 0.94), rgba(5, 7, 9, 0.92));
   border-color: rgba(255, 255, 255, 0.12);
   box-shadow: var(--shadow-panel);
-  animation: surfaceReveal 1.2s ease-out both;
 }
 
-.hero-name {
+.basic-panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02));
+  box-shadow: var(--shadow-panel);
+}
+
+.text-gradient {
   background: linear-gradient(120deg, #8af8df 0%, #90d5ff 48%, #d9f4ff 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -269,12 +222,12 @@ a {
     var(--shadow-panel);
 }
 
-@keyframes floatFade {
-  0% {
+@keyframes fade-in {
+  from {
     opacity: 0;
     transform: translateY(16px);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -356,7 +309,7 @@ a {
     opacity: 0;
   }
   100% {
-    opacity: 0.9;
+    opacity: 1;
   }
 }
 
@@ -371,14 +324,6 @@ a {
 }
 
 @media (max-width: 768px) {
-  .hero-band {
-    padding-inline: calc(50vw - 50% + 0.25rem);
-  }
-
-  .overview-band {
-    padding-inline: calc(50vw - 50% + 0.25rem);
-  }
-
   .ambient-line[data-mobile="hide"],
   .ambient-shape[data-mobile="hide"],
   .ambient-glow[data-mobile="hide"] {

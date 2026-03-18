@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Manrope, Sora } from "next/font/google";
 import "./app.css";
-import SiteHeader from "@/components/site-header";
+import Navbar from "@/components/general/navbar";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -74,10 +74,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.variable} ${sora.variable} ${plexMono.variable} antialiased`}>
-        <div className="site-shell">
-          <SiteHeader />
-          {children}
-        </div>
+        <Navbar />
+        {children}
       </body>
     </html>
   );
