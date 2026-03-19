@@ -2,7 +2,9 @@ import Link from "next/link";
 import { ArrowDown, ArrowRight } from "lucide-react";
 import { BackgroundEffects } from "@/components/home/backgroundEffects";
 import { PageMain } from "@/components/general/pageMain";
-import { NavigationCard, SectionIntro, SignalCard } from "@/components/site-primitives";
+import { SectionIntro } from "@/components/general/sectionIntro";
+import { InfoCard } from "@/components/general/infoCard";
+import { NavCard } from "@/components/general/navCard";
 import { homeNavigationCards, homeSignals, siteMeta } from "@/content/site";
 
 export default function HomePage() {
@@ -96,7 +98,7 @@ export default function HomePage() {
               />
               <div className="grid gap-4">
                 {homeSignals.map((signal) => (
-                  <SignalCard
+                  <InfoCard
                     key={signal.title}
                     title={signal.title}
                     description={signal.description}
@@ -117,7 +119,7 @@ export default function HomePage() {
 
               <div className="grid gap-4 sm:grid-cols-2">
                 {homeNavigationCards.map((card) => (
-                  <NavigationCard
+                  <NavCard
                     key={card.href}
                     href={card.href}
                     title={card.title}
