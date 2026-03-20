@@ -55,11 +55,12 @@ a {
       transparent 72%,
       rgba(110, 183, 255, 0.03)
     );
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   isolation: isolate;
-  margin-top: -6.5rem;
-  min-height: calc(100vh + 6.5rem);
-  padding-top: 6.5rem;
+  min-height: 100vh;
 }
 
 .main-panel {
@@ -67,14 +68,14 @@ a {
   background:
     linear-gradient(155deg, rgba(255, 255, 255, 0.06), transparent 34%),
     linear-gradient(180deg, rgba(18, 21, 27, 0.94), rgba(5, 7, 9, 0.92));
-  border-color: rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.12);
   box-shadow: var(--shadow-panel);
 }
 
 .basic-panel {
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.12);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02));
   box-shadow: var(--shadow-panel);
 }

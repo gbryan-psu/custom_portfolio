@@ -12,8 +12,8 @@ export default function HomePage() {
     <PageMain>
       <section className="background-effect">
         <BackgroundEffects />
-        <div className="relative z-10 mx-auto flex min-h-[34rem] animate-fade-in items-center justify-center py-10 pb-45 opacity-0">
-          <div className="main-panel mx-auto w-full max-w-5xl px-6 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14">
+        <div className="relative z-10 mx-auto">
+          <div className="main-panel mx-auto w-full max-w-5xl animate-fade-in px-8 py-8 opacity-0">
             <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_260px] lg:items-end">
               <div className="space-y-8">
                 <div className="space-y-4">
@@ -59,7 +59,7 @@ export default function HomePage() {
                   <p className="font-mono text-[0.68rem] tracking-[0.32em] text-white/45 uppercase">
                     Focus
                   </p>
-                  <p className="mt-2 text-sm leading-7 text-[var(--color-text-muted)]">
+                  <p className="py-2 text-sm leading-7 text-[var(--color-text-muted)]">
                     Frontend architecture, quality-minded delivery, and interfaces that balance
                     clarity with character.
                   </p>
@@ -69,7 +69,7 @@ export default function HomePage() {
                   <p className="font-mono text-[0.68rem] tracking-[0.32em] text-white/45 uppercase">
                     Current lens
                   </p>
-                  <p className="mt-2 text-sm leading-7 text-[var(--color-text-muted)]">
+                  <p className="py-2 text-sm leading-7 text-[var(--color-text-muted)]">
                     Reusable UI systems, reliable web apps, TypeScript workflows, and thoughtful
                     interaction design.
                   </p>

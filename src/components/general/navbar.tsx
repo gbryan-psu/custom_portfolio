@@ -9,7 +9,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 px-4 pt-4">
+    <header className="fixed inset-x-0 top-0 z-50 pt-4">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 border border-white/12 bg-[rgba(12,12,12,0.84)] px-4 py-3 shadow-[0_28px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl sm:px-6">
         <Link href="/" className="group min-w-0">
           <div className="font-mono text-[0.68rem] tracking-[0.32em] text-[var(--color-mint)]/80 uppercase">
