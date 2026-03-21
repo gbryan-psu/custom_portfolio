@@ -3,8 +3,8 @@ import { ArrowDown, ArrowRight } from "lucide-react";
 import { BackgroundEffects } from "@/components/home/backgroundEffects";
 import { PageMain } from "@/components/general/pageMain";
 import { SectionIntro } from "@/components/general/sectionIntro";
-import { InfoCard } from "@/components/general/infoCard";
-import { NavCard } from "@/components/general/navCard";
+import { InfoCard } from "@/components/home/infoCard";
+import { NavCard } from "@/components/home/navCard";
 import { homeNavigationCards, homeSignals, siteMeta } from "@/content/site";
 
 export default function HomePage() {

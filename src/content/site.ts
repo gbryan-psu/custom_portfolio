@@ -9,7 +9,7 @@ export type NavItem = {
 export const siteMeta = {
   name: "Gabien Bryan",
   title: "Software Engineer",
-  location: "Based in New York",
+  location: "Based in Philadelphia",
   blurb:
     "I build resilient web experiences with an engineer's eye for systems, interfaces, and quality.",
   email: "hello@gabienbryan.dev",
