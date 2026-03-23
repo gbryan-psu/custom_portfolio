@@ -13,17 +13,17 @@ export default function HomePage() {
       <section className="background-effect">
         <BackgroundEffects />
         <div className="relative z-10 mx-auto">
-          <div className="main-panel mx-auto w-full max-w-5xl animate-fade-in px-8 py-8 opacity-0">
-            <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_260px] lg:items-end">
-              <div className="space-y-8">
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4">
-                    <p className="font-mono text-[0.74rem] tracking-[0.42em] text-[var(--color-mint)] uppercase">
-                      {siteMeta.location} / Portfolio
+          <div className="main-panel mx-auto w-full max-w-6xl animate-fade-in px-8 py-8 opacity-0">
+            <div className="grid gap-10 lg:grid-cols-[1fr_260px] lg:items-end">
+              <div className="space-y-10">
+                <div className="space-y-10">
+                  <div className="flex items-center gap-8">
+                    <p className="font-mono text-lg tracking-[0.2em] text-[var(--color-mint)] uppercase">
+                      Quality Engineer to Software Engineer
                     </p>
                     <span className="section-kicker-line hidden sm:block" />
                   </div>
-                  <h1 className="max-w-3xl font-display text-5xl leading-[0.96] font-semibold tracking-[-0.07em] text-white sm:text-6xl lg:text-7xl">
+                  <h1 className="font-display text-7xl leading-[0.9] font-bold tracking-[-0.06em] text-white">
                     <span className="block text-white/92">
                       Passion for building thoughtful, reliable
                     </span>
@@ -31,7 +31,7 @@ export default function HomePage() {
                   </h1>
                 </div>
 
-                <p className="max-w-2xl text-base leading-8 text-[var(--color-text-muted)] sm:text-lg">
+                <p className="text-xl leading-7 text-[var(--color-text-muted)]">
                   I&apos;m {siteMeta.name}, a software engineer focused on clean systems,
                   maintainable frontends, and product experiences that feel polished from the first
                   interaction to the long tail of maintenance.
@@ -40,23 +40,23 @@ export default function HomePage() {
                 <div className="flex flex-wrap items-center gap-4">
                   <Link
                     href="/projects"
-                    className="inline-flex min-h-12 items-center gap-2 border border-[var(--color-mint)]/70 bg-[var(--color-mint)]/14 px-5 py-3 text-sm font-medium tracking-[0.22em] text-white uppercase shadow-[0_18px_40px_rgba(0,0,0,0.3)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[var(--color-mint)]/20"
+                    className="styled-button transition-all duration-300 hover:-translate-y-0.5"
                   >
                     View projects
                     <ArrowRight size={16} />
                   </Link>
                   <Link
                     href="/about"
-                    className="inline-flex min-h-12 items-center border border-white/12 bg-white/[0.02] px-5 py-3 text-sm font-medium tracking-[0.22em] text-white/72 uppercase shadow-[0_16px_36px_rgba(0,0,0,0.24)] transition-all duration-300 hover:border-[var(--color-mint)]/50 hover:text-[var(--color-mint)]"
+                    className="reg-button transition-all duration-300 hover:-translate-y-0.5"
                   >
                     Learn more
                   </Link>
                 </div>
               </div>
 
-              <div className="space-y-4 border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.045),rgba(255,255,255,0.015))] p-5 shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-sm">
+              <div className="main-panel space-y-4 p-4">
                 <div>
-                  <p className="font-mono text-[0.68rem] tracking-[0.32em] text-white/45 uppercase">
+                  <p className="font-mono text-[0.68rem] tracking-[0.32em] text-white/85 uppercase">
                     Focus
                   </p>
                   <p className="py-2 text-sm leading-7 text-[var(--color-text-muted)]">
@@ -66,7 +66,7 @@ export default function HomePage() {
                 </div>
                 <div className="section-divider" />
                 <div>
-                  <p className="font-mono text-[0.68rem] tracking-[0.32em] text-white/45 uppercase">
+                  <p className="font-mono text-[0.68rem] tracking-[0.32em] text-white/85 uppercase">
                     Current lens
                   </p>
                   <p className="py-2 text-sm leading-7 text-[var(--color-text-muted)]">
@@ -76,7 +76,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="relative z-10 flex items-center gap-2 text-white/52">
+              <div className="relative z-10 flex items-center gap-2 text-white/85">
                 <span className="h-px w-10 bg-white/16" />
                 <span className="font-mono text-[0.68rem] tracking-[0.34em] uppercase">Scroll</span>
                 <ArrowDown size={14} className="animate-[drift_4s_ease-in-out_infinite]" />
