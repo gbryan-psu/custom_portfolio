@@ -61,6 +61,7 @@ a {
   position: relative;
   isolation: isolate;
   min-height: 100vh;
+  padding: 4rem 0;
 }
 
 .main-panel {

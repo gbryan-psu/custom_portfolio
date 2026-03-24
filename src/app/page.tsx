@@ -88,8 +88,8 @@ export default function HomePage() {
       </section>
 
       <section className="relative">
-        <div className="overview-panel relative z-10 animate-fade-in px-6 py-8 sm:px-8 sm:py-10 lg:px-10">
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+        <div className="overview-panel relative z-10 animate-fade-in w-full p-20 opacity-0">
+          <div className="grid gap-20 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
             <div className="space-y-8">
               <SectionIntro
                 eyebrow="Overview"
@@ -108,11 +108,11 @@ export default function HomePage() {
             </div>
 
             <div className="space-y-6">
-              <div>
+              <div className="space-y-4">
                 <p className="font-mono text-[0.72rem] tracking-[0.34em] text-[var(--color-mint)] uppercase">
                   Continue through the site
                 </p>
-                <h2 className="mt-3 font-display text-2xl font-semibold tracking-[-0.04em] text-white sm:text-3xl">
+                <h2 className="font-display text-4xl font-semibold tracking-[-0.04em] text-white">
                   Choose the angle you want first.
                 </h2>
               </div>
