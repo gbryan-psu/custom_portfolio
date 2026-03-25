@@ -3,7 +3,6 @@ import { Code2, Compass, Mail, PanelsTopLeft, Sparkles, UserRound } from "lucide
 export type NavItem = {
   href: string;
   label: string;
-  special?: boolean;
 };
 
 export const siteMeta = {
@@ -20,7 +19,7 @@ export const navItems: NavItem[] = [
   { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
   { href: "/hobbies", label: "Hobbies" },
-  { href: "/contact", label: "Contact", special: true },
+  { href: "/contact", label: "Contact" },
 ];
 
 export const homeSignals = [
