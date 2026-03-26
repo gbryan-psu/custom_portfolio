@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
-import { Glow, Line, Shape } from "@/lib/types";
+import { Code2, Computer, Cpu, Keyboard, Monitor, Mouse } from "lucide-react";
+import { AmbientIcon, Glow, Line } from "@/lib/types";
 
 export function BackgroundEffects() {
   const lines: Line[] = [
@@ -10,10 +11,19 @@ export function BackgroundEffects() {
     { top: "74%", left: "8%", width: "24rem", rotate: "-8deg", delay: "0.84s", mobile: "hide" },
   ];
 
-  const shapes: Shape[] = [
-    { kind: "triangle", top: "12%", left: "10%", size: "5.75rem", rotate: "22deg", delay: "0.5s" },
+  const icons: AmbientIcon[] = [
     {
-      kind: "square",
+      kind: "monitor",
+      icon: Monitor,
+      top: "12%",
+      left: "10%",
+      size: "5.75rem",
+      rotate: "22deg",
+      delay: "0.5s",
+    },
+    {
+      kind: "computer",
+      icon: Computer,
       top: "10%",
       left: "76%",
       size: "5rem",
@@ -22,7 +32,8 @@ export function BackgroundEffects() {
       mobile: "hide",
     },
     {
-      kind: "diamond",
+      kind: "mouse",
+      icon: Mouse,
       top: "54%",
       left: "8%",
       size: "4.25rem",
@@ -30,7 +41,8 @@ export function BackgroundEffects() {
       delay: "0.68s",
     },
     {
-      kind: "ring",
+      kind: "keyboard",
+      icon: Keyboard,
       top: "26%",
       left: "70%",
       size: "6.2rem",
@@ -39,12 +51,23 @@ export function BackgroundEffects() {
       mobile: "hide",
     },
     {
-      kind: "triangle",
+      kind: "code",
+      icon: Code2,
       top: "68%",
       left: "82%",
       size: "4.8rem",
       rotate: "216deg",
       delay: "1.02s",
+      mobile: "hide",
+    },
+    {
+      kind: "cpu",
+      icon: Cpu,
+      top: "74%",
+      left: "60%",
+      size: "4.6rem",
+      rotate: "-12deg",
+      delay: "0.8s",
       mobile: "hide",
     },
   ] as const;
@@ -79,23 +102,29 @@ export function BackgroundEffects() {
           }
         />
       ))}
-      {shapes.map((shape) => (
-        <div
-          key={`${shape.kind}-${shape.top}-${shape.left}`}
-          className="ambient-shape"
-          data-kind={shape.kind}
-          data-mobile={shape?.mobile}
-          style={
-            {
-              "--shape-top": shape.top,
-              "--shape-left": shape.left,
-              "--shape-size": shape.size,
-              "--shape-rotate": shape.rotate,
-              animationDelay: shape.delay,
-            } as CSSProperties
-          }
-        />
-      ))}
+      {icons.map((item) => {
+        const Icon = item.icon;
+
+        return (
+          <div
+            key={`${item.kind}-${item.top}-${item.left}`}
+            className="ambient-icon"
+            data-kind={item.kind}
+            data-mobile={item.mobile}
+            style={
+              {
+                "--icon-top": item.top,
+                "--icon-left": item.left,
+                "--icon-size": item.size,
+                "--icon-rotate": item.rotate,
+                animationDelay: item.delay,
+              } as CSSProperties
+            }
+          >
+            <Icon className="ambient-icon-svg" strokeWidth={1.4} aria-hidden />
+          </div>
+        );
+      })}
       {glows.map((glow) => (
         <div
           key={`${glow.top}-${glow.left}-${glow.tone}`}

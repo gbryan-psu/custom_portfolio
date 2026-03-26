@@ -9,8 +9,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 pt-4 sm:px-30">
-      <div className="main-panel flex items-center justify-between gap-6 p-4">
+    <header className="fixed inset-x-0 top-0 z-50 pt-2 sm:px-30">
+      <div className="main-panel flex items-center justify-between gap-6 px-3 py-1.5">
         <Link href="/" className="group">
           <div className="font-mono text-[0.68rem] tracking-[0.32em] text-[var(--color-mint)]/80 uppercase">
             Portfolio

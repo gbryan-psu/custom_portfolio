@@ -1,3 +1,10 @@
+import type { LucideIcon } from "lucide-react";
+
+export type NavItem = {
+  href: string;
+  label: string;
+};
+
 export type Line = {
   top: string;
   left: string;
@@ -7,8 +14,17 @@ export type Line = {
   mobile?: "hide";
 };
 
-export type Shape = {
-  kind: "triangle" | "square" | "diamond" | "ring";
+export type AmbientIconName =
+  | "monitor"
+  | "computer"
+  | "mouse"
+  | "keyboard"
+  | "code"
+  | "cpu";
+
+export type AmbientIcon = {
+  kind: AmbientIconName;
+  icon: LucideIcon;
   top: string;
   left: string;
   size: string;

@@ -1,9 +1,5 @@
 import { Code2, Compass, Mail, PanelsTopLeft, Sparkles, UserRound } from "lucide-react";
-
-export type NavItem = {
-  href: string;
-  label: string;
-};
+import { NavItem } from "@/lib/types";
 
 export const siteMeta = {
   name: "Gabien Bryan",
