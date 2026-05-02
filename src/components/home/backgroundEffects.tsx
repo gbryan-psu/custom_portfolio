@@ -4,11 +4,18 @@ import { AmbientIcon, Glow, Line } from "@/lib/types";
 
 export function BackgroundEffects() {
   const lines: Line[] = [
-    { top: "10%", left: "-4%", width: "38rem", rotate: "-14deg", delay: "0.2s" },
-    { top: "21%", left: "62%", width: "26rem", rotate: "26deg", delay: "0.45s" },
-    { top: "48%", left: "-2%", width: "22rem", rotate: "18deg", delay: "0.58s" },
-    { top: "63%", left: "46%", width: "33rem", rotate: "-30deg", delay: "0.72s", mobile: "hide" },
-    { top: "74%", left: "8%", width: "24rem", rotate: "-8deg", delay: "0.84s", mobile: "hide" },
+    { top: "15%", left: "-4%", width: "40rem", rotate: "-14deg", delay: "0.2s" },
+    { top: "27%", left: "16%", width: "30rem", rotate: "-10deg", delay: "0.34s" },
+    { top: "35%", left: "6%", width: "26rem", rotate: "18deg", delay: "0.58s" },
+    { top: "55%", left: "-2%", width: "32rem", rotate: "30deg", delay: "0.65s" },
+    { top: "90%", left: "10%", width: "38rem", rotate: "-20deg", delay: "0.84s"},
+
+    { top: "21%", left: "56%", width: "26rem", rotate: "40deg", delay: "0.45s" },
+    { top: "30%", left: "52%", width: "33rem", rotate: "-36deg", delay: "0.72s"},
+    { top: "42%", left: "76%", width: "26rem", rotate: "22deg", delay: "0.45s" },
+    { top: "63%", left: "66%", width: "33rem", rotate: "-24deg", delay: "0.72s"},
+    { top: "75%", left: "48%", width: "26rem", rotate: "26deg", delay: "0.45s" },
+    { top: "90%", left: "68%", width: "33rem", rotate: "-30deg", delay: "0.72s"},
   ];
 
   const icons: AmbientIcon[] = [
@@ -73,13 +80,13 @@ export function BackgroundEffects() {
   ] as const;
 
   const glows: Glow[] = [
-    { top: "18%", left: "24%", size: "11rem", tone: "mint", delay: "0.25s" },
+    { top: "85%", left: "80%", size: "25rem", tone: "mint", delay: "0.15s" },
     {
-      top: "30%",
-      left: "72%",
+      top: "80%",
+      left: "15%",
       size: "15rem",
       tone: "cyan",
-      delay: "0.45s",
+      delay: "2s",
       mobile: "hide",
     },
   ] as const;

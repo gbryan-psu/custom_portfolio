@@ -2,16 +2,12 @@
 
 :root {
   --background: #020304;
-  --background-alt: #05070a;
   --foreground: #f5f7fa;
-  --surface: #090b0f;
-  --surface-elevated: #10141a;
-  --surface-strong: #141a21;
   --color-mint: #7cffdd;
   --color-cyan: #6eb7ff;
   --color-text-muted: #9ca6b5;
   --color-line: rgba(255, 255, 255, 0.1);
-  --shadow-panel: 0 0 90px rgba(0, 0, 0, 1), 0 0 30px rgba(0, 0, 0, 1);;
+  --shadow-panel: 0 0 90px rgba(0, 0, 0, 1), 0 0 30px rgba(0, 0, 0, 1);
   --shadow-panel-hover: 0 38px 105px rgba(0, 0, 0, 0.38), 0 16px 40px rgba(0, 0, 0, 0.38);
 }
 
@@ -254,18 +250,19 @@ a {
   left: var(--glow-left);
   width: var(--glow-size);
   height: var(--glow-size);
+  translate: -50% -50%;
   border-radius: 999px;
-  filter: blur(70px);
+  filter: blur(calc(var(--glow-size) / 3));
   opacity: 0;
-  animation: glowFade 2.8s ease-out forwards;
+  animation: glowFade 10s ease-out infinite;
 }
 
 .ambient-glow[data-tone="mint"] {
-  background: rgba(124, 255, 221, 0.1);
+  background: rgba(124, 255, 221, .25);
 }
 
 .ambient-glow[data-tone="cyan"] {
-  background: rgba(110, 183, 255, 0.12);
+  background: rgba(110, 183, 255, .25);
 }
 
 .section-divider {
@@ -296,17 +293,6 @@ a {
     transform: translateY(16px);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes surfaceReveal {
-  0% {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  100% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -376,8 +362,11 @@ a {
   0% {
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
