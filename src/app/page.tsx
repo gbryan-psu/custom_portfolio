@@ -19,7 +19,7 @@ export default function HomePage() {
                 <div className="space-y-10">
                   <div className="flex items-center gap-8">
                     <p className="font-mono text-lg tracking-[0.2em] text-[var(--color-mint)] uppercase">
-                      Welcome!!
+                      Quality Engineer to Software Engineer
                     </p>
                     <span className="section-kicker-line hidden sm:block" />
                   </div>
