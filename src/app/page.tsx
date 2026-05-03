@@ -19,7 +19,7 @@ export default function HomePage() {
                 <div className="space-y-10">
                   <div className="flex items-center gap-8">
                     <p className="font-mono text-lg tracking-[0.2em] text-[var(--color-mint)] uppercase">
-                      Quality Engineer to Software Engineer
+                      Welcome!!
                     </p>
                     <span className="section-kicker-line hidden sm:block" />
                   </div>
@@ -79,7 +79,7 @@ export default function HomePage() {
               <div className="relative z-10 flex items-center gap-2 text-white/85">
                 <span className="h-px w-10 bg-white/16" />
                 <span className="font-mono text-[0.68rem] tracking-[0.34em] uppercase">Scroll</span>
-                <ArrowDown size={14} className="animate-[drift_4s_ease-in-out_infinite]" />
+                <ArrowDown size={14} className="animate-[y-drift_2s_ease-in-out_infinite]" />
                 <span className="h-px w-10 bg-white/16" />
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function HomePage() {
       </section>
 
       <section className="relative">
-        <div className="overview-panel relative z-10 animate-fade-in w-full p-20 opacity-0">
+        <div className="overview-panel relative z-10 w-full animate-fade-in p-20 opacity-0">
           <div className="grid gap-20 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
             <div className="space-y-8">
               <SectionIntro
