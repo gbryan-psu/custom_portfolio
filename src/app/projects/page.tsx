@@ -5,7 +5,7 @@ import { projectsHighlights } from "@/content/site";
 
 export default function ProjectsPage() {
   return (
-    <PageMain className="pt-8">
+    <PageMain className="background-effect">
       <PageHero
         eyebrow="Projects"
         title="Projects that show the bridge from quality ownership to software engineering."

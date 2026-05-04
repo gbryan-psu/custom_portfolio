@@ -6,7 +6,7 @@ import { siteMeta } from "@/content/site";
 
 export default function ContactPage() {
   return (
-    <PageMain>
+    <PageMain className="background-effect">
       <PageHero
         eyebrow="Contact"
         title="Open to Software Engineering conversations."

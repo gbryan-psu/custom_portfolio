@@ -23,7 +23,7 @@ export default function AboutPage() {
         }
       />
 
-      <section className="basic-panel mt-8 px-6 py-8 sm:px-8">
+      <section className="mt-8 px-6 py-8 sm:px-8">
         <div className="grid gap-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
           <SectionIntro
             eyebrow="How I work"

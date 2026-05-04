@@ -5,7 +5,7 @@ import { hobbiesHighlights } from "@/content/site";
 
 export default function HobbiesPage() {
   return (
-    <PageMain className="pt-8">
+    <PageMain className="background-effect">
       <PageHero
         eyebrow="Hobbies"
         title="The curiosity outside the role that keeps the engineering work moving."
