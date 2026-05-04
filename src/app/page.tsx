@@ -27,7 +27,7 @@ export default function HomePage() {
                     <span className="block text-white/92">
                       Building software with a quality-first
                     </span>
-                    <span className="text-gradient block">engineering mindset.</span>
+                    <span className="text-gradient block pb-2.5">engineering mindset.</span>
                   </h1>
                 </div>
 

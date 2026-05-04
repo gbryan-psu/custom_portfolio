@@ -25,7 +25,7 @@ export function BackgroundEffects() {
       left: "15%",
       size: "5.75rem",
       rotate: "22deg",
-      delay: "3s",
+      delay: "1s",
     },
     {
       kind: "computer",
@@ -34,7 +34,7 @@ export function BackgroundEffects() {
       left: "90%",
       size: "5rem",
       rotate: "-18deg",
-      delay: "1s",
+      delay: "0s",
     },
     {
       kind: "mouse",
@@ -43,7 +43,7 @@ export function BackgroundEffects() {
       left: "8%",
       size: "4.25rem",
       rotate: "-28deg",
-      delay: "7s",
+      delay: "8s",
     },
     {
       kind: "keyboard",
@@ -52,7 +52,7 @@ export function BackgroundEffects() {
       left: "55%",
       size: "6.2rem",
       rotate: "34deg",
-      delay: "10s",
+      delay: "5s",
     },
     {
       kind: "code",
@@ -61,7 +61,7 @@ export function BackgroundEffects() {
       left: "94%",
       size: "4.8rem",
       rotate: "216deg",
-      delay: "12s",
+      delay: "3s",
     },
     {
       kind: "cpu",
@@ -70,7 +70,7 @@ export function BackgroundEffects() {
       left: "35%",
       size: "4.6rem",
       rotate: "-12deg",
-      delay: "9s",
+      delay: "6s",
     },
   ] as const;
 

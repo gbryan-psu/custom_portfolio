@@ -23,8 +23,8 @@ export default function AboutPage() {
         }
       />
 
-      <section className="mt-8 px-6 py-8 sm:px-8">
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
+      <section className="mt-8 px-8 py-8">
+        <div className="grid grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-8">
           <SectionIntro
             eyebrow="How I work"
             title="I bring reliability thinking into implementation, not just verification."

@@ -24,8 +24,8 @@ export default function ContactPage() {
         }
       />
 
-      <section className="mt-8 px-6 py-8 sm:px-8">
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
+      <section className="mt-8 px-8 py-8">
+        <div className="grid grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-8">
           <SectionIntro
             eyebrow="Reach out"
             title="Let's talk about the next engineering step."
