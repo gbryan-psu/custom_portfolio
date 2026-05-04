@@ -9,16 +9,16 @@ export default function ContactPage() {
     <PageMain>
       <PageHero
         eyebrow="Contact"
-        title="A direct, low-friction way to start a conversation."
-        description="Whether you want to talk about a role, a project, or collaboration, this page is structured to feel intentional now and easy to expand later with social links or a contact form."
+        title="Open to Software Engineering conversations."
+        description="I am looking for Software Engineering opportunities where I can build product software, keep growing in React and TypeScript, and bring the reliability, automation, and customer-facing judgment I developed as a Quality Engineer."
         aside={
           <div className="space-y-3">
             <p className="font-mono text-[0.72rem] tracking-[0.34em] text-white/45 uppercase">
               Best fit
             </p>
             <p>
-              Teams that care about thoughtful product work, reliable delivery, and strong
-              collaboration.
+              Teams that value thoughtful product work, reliable delivery, TypeScript, React,
+              automation, and strong collaboration between development and quality.
             </p>
           </div>
         }
@@ -28,8 +28,8 @@ export default function ContactPage() {
         <div className="grid gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
           <SectionIntro
             eyebrow="Reach out"
-            title="Simple by design."
-            description="This starter page keeps the action clear and gives you a polished place to add more channels later."
+            title="Let's talk about the next engineering step."
+            description="Email is the easiest way to reach me. LinkedIn has the fuller career timeline, including my Minitab experience and current Software Engineering transition."
           />
 
           <div className="grid gap-4">
@@ -45,9 +45,15 @@ export default function ContactPage() {
               </Link>
             </article>
             <article className="border border-white/8 bg-black/10 p-5 text-sm leading-7 text-[var(--color-text-muted)]">
-              Add LinkedIn, GitHub, scheduling links, or a lightweight form here when you are ready.
-              The section styling is already shared with the rest of the site, so those additions
-              can stay consistent.
+              <p className="font-mono text-[0.68rem] tracking-[0.32em] text-white/45 uppercase">
+                LinkedIn
+              </p>
+              <Link
+                href={siteMeta.linkedIn}
+                className="mt-3 inline-block font-display text-2xl font-medium tracking-[-0.04em] text-white transition-colors duration-300 hover:text-[var(--color-mint)]"
+              >
+                Gabien Bryan
+              </Link>
             </article>
           </div>
         </div>

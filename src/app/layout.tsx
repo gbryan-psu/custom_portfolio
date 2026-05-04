@@ -23,14 +23,14 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gabien Bryan | Software Engineer",
+  title: "Gabien Bryan | Quality Engineer to Software Engineer",
   description:
-    "A multi-page portfolio for Gabien Bryan featuring software engineering work, background, interests, and contact details.",
+    "Gabien Bryan's portfolio, highlighting Quality Engineering experience, product development work, React and TypeScript projects, and a focused transition into Software Engineering.",
   keywords: [
     "Gabien Bryan",
-    "Web Engineer",
-    "Software Engineer",
-    "Full-Stack Developer",
+    "Quality Engineer",
+    "Software Engineering",
+    "Software Engineer Transition",
     "Portfolio",
     "Personal Website",
     "React Developer",
@@ -38,10 +38,13 @@ export const metadata: Metadata = {
     "JavaScript",
     "TypeScript",
     "Node.js",
-    "Playwright Testing",
+    "Playwright",
+    "Test Automation",
     "Web Applications",
     "Frontend Development",
     "Backend Development",
+    "CI/CD",
+    "Azure DevOps",
     "Interactive Projects",
     "Coding Portfolio",
     "Programming Projects",
@@ -49,9 +52,8 @@ export const metadata: Metadata = {
   authors: [{ name: "Gabien Bryan", url: "https://gabien-bryan.com" }],
   creator: "Gabien Bryan",
   openGraph: {
-    title: "Gabien Bryan | Software Engineer",
-    description:
-      "Explore the portfolio, projects, background, and contact details of Gabien Bryan.",
+    title: "Gabien Bryan | Quality Engineer to Software Engineer",
+    description: "Explore Gabien Bryan's Quality Engineering background, experience, and projects.",
     url: "https://gabien-bryan.com",
     siteName: "Gabien Bryan Portfolio",
     type: "website",

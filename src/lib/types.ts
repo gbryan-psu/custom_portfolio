@@ -14,13 +14,7 @@ export type Line = {
   mobile?: "hide";
 };
 
-export type AmbientIconName =
-  | "monitor"
-  | "computer"
-  | "mouse"
-  | "keyboard"
-  | "code"
-  | "cpu";
+export type AmbientIconName = "monitor" | "computer" | "mouse" | "keyboard" | "code" | "cpu";
 
 export type AmbientIcon = {
   kind: AmbientIconName;

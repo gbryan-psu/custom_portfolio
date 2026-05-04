@@ -25,16 +25,17 @@ export default function HomePage() {
                   </div>
                   <h1 className="font-display text-7xl leading-[0.9] font-bold tracking-[-0.06em] text-white">
                     <span className="block text-white/92">
-                      Passion for building thoughtful, reliable
+                      Building software with a quality-first
                     </span>
-                    <span className="text-gradient block">software experiences.</span>
+                    <span className="text-gradient block">engineering mindset.</span>
                   </h1>
                 </div>
 
                 <p className="text-xl leading-7 text-[var(--color-text-muted)]">
-                  I&apos;m {siteMeta.name}, a software engineer focused on clean systems,
-                  maintainable frontends, and product experiences that feel polished from the first
-                  interaction to the long tail of maintenance.
+                  I&apos;m {siteMeta.name}, a Quality Engineer actively transitioning into Software
+                  Engineering. At Minitab, I support product teams with React and TypeScript
+                  development work, own a shared Playwright automation framework, and investigate
+                  real customer and release issues with the same care I bring to code.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4">
@@ -60,8 +61,8 @@ export default function HomePage() {
                     Focus
                   </p>
                   <p className="py-2 text-sm leading-7 text-[var(--color-text-muted)]">
-                    Frontend architecture, quality-minded delivery, and interfaces that balance
-                    clarity with character.
+                    React, TypeScript, Playwright, CI/CD, API validation, App Insights, KQL, and
+                    product work that stays reliable after release.
                   </p>
                 </div>
                 <div className="section-divider" />
@@ -70,8 +71,8 @@ export default function HomePage() {
                     Current lens
                   </p>
                   <p className="py-2 text-sm leading-7 text-[var(--color-text-muted)]">
-                    Reusable UI systems, reliable web apps, TypeScript workflows, and thoughtful
-                    interaction design.
+                    Moving intentionally toward Software Engineering through real development tasks,
+                    automation ownership, debugging, and personal frontend projects.
                   </p>
                 </div>
               </div>
@@ -93,8 +94,8 @@ export default function HomePage() {
             <div className="space-y-8">
               <SectionIntro
                 eyebrow="Overview"
-                title="An engineer's portfolio shaped like a guided tour, not a file dump."
-                description="The homepage sets the direction, then hands off into focused spaces for background, work, interests, and contact. Informational notes stay distinct from navigation so the page reads clearly on both desktop and mobile."
+                title="A portfolio for the next role, grounded in the work I am already doing."
+                description="This site frames my path from Quality Engineer to Software Engineer through hands-on product development, automation framework ownership, CI/CD improvements, customer issue investigation, and personal projects that show how I build."
               />
               <div className="grid gap-4">
                 {homeSignals.map((signal) => (
@@ -113,7 +114,7 @@ export default function HomePage() {
                   Continue through the site
                 </p>
                 <h2 className="font-display text-4xl font-semibold tracking-[-0.04em] text-white">
-                  Choose the angle you want first.
+                  Start with the angle that matters most.
                 </h2>
               </div>
 

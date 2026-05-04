@@ -8,14 +8,16 @@ export default function HobbiesPage() {
     <PageMain className="pt-8">
       <PageHero
         eyebrow="Hobbies"
-        title="A place for the interests and side quests that feed better product instincts."
-        description="The strongest portfolios usually show more than output. This page gives you room to add personality through the activities, curiosities, and creative habits that influence how you build."
+        title="The curiosity outside the role that keeps the engineering work moving."
+        description="Personal projects give me room to practice the software engineering skills I am building toward: frontend polish, reusable components, interaction details, and the patience to keep iterating until something feels right."
         aside={
           <div className="space-y-3">
             <p className="font-mono text-[0.72rem] tracking-[0.34em] text-white/45 uppercase">
-              Suggested use
+              Current focus
             </p>
-            <p>Use this page for a few specific interests rather than a long list of everything.</p>
+            <p>
+              Keep learning through small builds, UI experiments, and hands-on technical practice.
+            </p>
           </div>
         }
       />
@@ -23,8 +25,8 @@ export default function HobbiesPage() {
       <section className="mt-8 px-6 py-8 sm:px-8">
         <SectionIntro
           eyebrow="Outside of work"
-          title="Interests can sharpen engineering judgment too."
-          description="Creative play, curiosity, and taste-building often improve how software gets designed. This page is ready for those details."
+          title="Side projects make the transition more concrete."
+          description="They let me practice the skills I want to use every day while giving future teams something real to evaluate beyond a resume."
         />
 
         <div className="mt-8 grid gap-4 md:grid-cols-2">

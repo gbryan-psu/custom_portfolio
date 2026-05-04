@@ -8,16 +8,16 @@ export default function AboutPage() {
     <PageMain className="background-effect">
       <PageHero
         eyebrow="About"
-        title="A systems-minded engineer who cares about craft, clarity, and the people maintaining the code next."
-        description="I like building web experiences that feel refined to users and straightforward to evolve for teams. My approach combines strong frontend instincts with a quality engineering background, which means I naturally think about resilience, edge cases, and sustainable architecture."
+        title="A Quality Engineer moving into Software Engineering through product work I can point to."
+        description="My path is practical and honest: my title is Quality Engineer, but my day-to-day work has expanded into building features, improving developer workflows, maintaining automation systems, and helping teams ship with confidence."
         aside={
           <div className="space-y-3">
             <p className="font-mono text-[0.72rem] tracking-[0.34em] text-white/45 uppercase">
               Working style
             </p>
             <p>
-              Calm collaboration, strong ownership, and a preference for reusable systems over
-              one-off heroics.
+              Calm collaboration, strong ownership, fast learning, and a habit of making software
+              easier to test, debug, and extend.
             </p>
           </div>
         }
@@ -27,8 +27,8 @@ export default function AboutPage() {
         <div className="grid gap-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
           <SectionIntro
             eyebrow="How I work"
-            title="I try to make software easier to trust."
-            description="That shows up in code structure, in the way interfaces are introduced, and in how delivery practices support confidence instead of slowing momentum down."
+            title="I bring reliability thinking into implementation, not just verification."
+            description="Quality engineering taught me to look past the happy path: data sync, authentication, performance, release risk, production behavior, and what users actually experience. Software engineering lets me apply that judgment earlier, while the product is still being shaped."
           />
 
           <div className="grid gap-4">
