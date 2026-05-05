@@ -32,7 +32,7 @@ export default function HomePage() {
                 </div>
 
                 <p className="text-xl leading-7 text-[var(--color-text-muted)]">
-                  I&apos;m {siteMeta.name}, a Quality Engineer actively transitioning into Software
+                  I&apos;m {siteMeta.name}, a Quality Engineer transitioning into Software
                   Engineering. At Minitab, I support product teams with React and TypeScript
                   development work, own a shared Playwright automation framework, and investigate
                   real customer and release issues with the same care I bring to code.
@@ -44,7 +44,6 @@ export default function HomePage() {
                     className="styled-button transition-all duration-300 hover:-translate-y-0.5"
                   >
                     View projects
-                    <ArrowRight size={16} />
                   </Link>
                   <Link
                     href="/about"
@@ -68,11 +67,11 @@ export default function HomePage() {
                 <div className="section-divider" />
                 <div>
                   <p className="font-mono text-[0.68rem] tracking-[0.32em] text-white/85 uppercase">
-                    Current lens
+                    In-Development
                   </p>
                   <p className="py-2 text-sm leading-7 text-[var(--color-text-muted)]">
                     Moving intentionally toward Software Engineering through real development tasks,
-                    automation ownership, debugging, and personal frontend projects.
+                    automation ownership, debugging, and personal projects.
                   </p>
                 </div>
               </div>
@@ -90,12 +89,12 @@ export default function HomePage() {
 
       <section className="relative">
         <div className="overview-panel relative z-10 w-full animate-fade-in p-20 opacity-0">
-          <div className="grid gap-20 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+          <div className="grid grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-20">
             <div className="space-y-8">
               <SectionIntro
                 eyebrow="Overview"
-                title="A portfolio for the next role, grounded in the work I am already doing."
-                description="This site frames my path from Quality Engineer to Software Engineer through hands-on product development, automation framework ownership, CI/CD improvements, customer issue investigation, and personal projects that show how I build."
+                title="Showing why I am ready to step into software engineering."
+                description="The goal of this site is to make that transition tangible through real product work, automation ownership, technical problem-solving, and projects that reflect how I build."
               />
               <div className="grid gap-4">
                 {homeSignals.map((signal) => (
