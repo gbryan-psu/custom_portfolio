@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { ArrowDown, ArrowRight } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { BackgroundEffects } from "@/components/home/backgroundEffects";
 import { PageMain } from "@/components/general/pageMain";
 import { SectionIntro } from "@/components/general/sectionIntro";
 import { InfoCard } from "@/components/home/infoCard";
 import { NavCard } from "@/components/home/navCard";
-import { homeNavigationCards, homeSignals, siteMeta } from "@/content/site";
+import { homeNavigationCards, homeInfoCards, siteMeta } from "@/lib/content";
 
 export default function HomePage() {
   return (
@@ -67,7 +67,7 @@ export default function HomePage() {
                 <div className="section-divider" />
                 <div>
                   <p className="font-mono text-[0.68rem] tracking-[0.32em] text-white/85 uppercase">
-                    In-Development
+                    In Development
                   </p>
                   <p className="py-2 text-sm leading-7 text-[var(--color-text-muted)]">
                     Moving intentionally toward Software Engineering through real development tasks,
@@ -94,15 +94,11 @@ export default function HomePage() {
               <SectionIntro
                 eyebrow="Overview"
                 title="Showing why I am ready to step into software engineering."
-                description="The goal of this site is to make that transition tangible through real product work, automation ownership, technical problem-solving, and projects that reflect how I build."
+                description="My goal is to step into Software Engineering by showing real product work, automation ownership, technical problem-solving, and the quality approach that shapes how I build."
               />
               <div className="grid gap-4">
-                {homeSignals.map((signal) => (
-                  <InfoCard
-                    key={signal.title}
-                    title={signal.title}
-                    description={signal.description}
-                  />
+                {homeInfoCards.map((card) => (
+                  <InfoCard key={card.title} title={card.title} description={card.description} />
                 ))}
               </div>
             </div>
@@ -113,7 +109,7 @@ export default function HomePage() {
                   Continue through the site
                 </p>
                 <h2 className="font-display text-4xl font-semibold tracking-[-0.04em] text-white">
-                  Start with the angle that matters most.
+                  Explore the work, story, and direction behind my transition.
                 </h2>
               </div>
 

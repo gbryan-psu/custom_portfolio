@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { navItems, siteMeta } from "@/content/site";
+import { navItems, siteMeta } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
 export default function Navbar() {

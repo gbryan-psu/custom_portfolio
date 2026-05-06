@@ -2,7 +2,7 @@ import Link from "next/link";
 import { PageHero } from "@/components/general/pageHero";
 import { SectionIntro } from "@/components/general/sectionIntro";
 import { PageMain } from "@/components/general/pageMain";
-import { siteMeta } from "@/content/site";
+import { siteMeta } from "@/lib/content";
 
 export default function ContactPage() {
   return (

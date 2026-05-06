@@ -1,7 +1,7 @@
 import { PageHero } from "@/components/general/pageHero";
 import { SectionIntro } from "@/components/general/sectionIntro";
 import { PageMain } from "@/components/general/pageMain";
-import { projectsHighlights } from "@/content/site";
+import { projectsHighlights } from "@/lib/content";
 
 export default function ProjectsPage() {
   return (

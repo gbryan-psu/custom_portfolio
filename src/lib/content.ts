@@ -19,7 +19,7 @@ export const navItems: NavItem[] = [
   { href: "/contact", label: "Contact" },
 ];
 
-export const homeSignals = [
+export const homeInfoCards = [
   {
     title: "Professional engineering experience",
     description:
@@ -28,7 +28,7 @@ export const homeSignals = [
   {
     title: "Real development contributions",
     description:
-      "When projects are starting up, I contribute implementation work before testing demand ramps up: React UI updates, reusable components, backend integration support, and tests for the features I help build.",
+      "When projects are starting up, I contribute implementation work before testing demand ramps up, including React UI updates, reusable components, backend integration support, and tests for the features I help build.",
   },
   {
     title: "Automation and CI/CD ownership",
@@ -41,7 +41,8 @@ export const homeNavigationCards = [
   {
     href: "/about",
     title: "About",
-    description: "How my quality background is shaping the way I move into software engineering.",
+    description:
+      "A closer look at my background, experience, and transition into software engineering.",
     icon: UserRound,
   },
   {
@@ -66,10 +67,11 @@ export const homeNavigationCards = [
 ];
 
 export const aboutHighlights = [
-  "At Minitab, my official role is Quality Engineer, but my work has increasingly moved closer to product development. I have led quality for complex releases while also contributing code early in projects when the team needed extra implementation support.",
-  "Recent development work has included React UI updates, reusable components for data preview and worksheet statistics, context menu functionality for cloud storage workflows, and support for backend/API integration paths.",
-  "I own a shared Playwright and TypeScript automation framework that supports cross-product end-to-end coverage, Azure DevOps pipelines, HTML reporting, Teams notifications, staging/live smoke validation, and parallelized test execution.",
-  "My quality background makes me a more careful developer. I think about edge cases, data sync, authentication, install and licensing paths, customer-reported issues, observability through App Insights and KQL, and how a change will behave after release.",
+  "I earned my Computer Engineering degree from Penn State in 2021, where my senior capstone was an autonomous robotic car built with C, Raspberry Pi hardware, PWM control, and infrared sensors.",
+  "At Minitab, I have worked as the sole QE on complex product projects while contributing development work early in delivery. That mix has included testing ownership, bug turnaround, feature planning, and implementation support.",
+  "My recent React work includes data preview UI updates, a reusable worksheet statistics component, header changes, context menu functionality for cloud storage workflows, backend/API integration support, and supporting tests.",
+  "I maintain a shared Playwright and TypeScript automation framework across web products, with Azure DevOps pipelines, HTML reporting, Teams notifications, staging and live deployment validation, multiple test types, and parallelized execution.",
+  "I recently improved CI feedback by adding sharding to the test automation framework, bringing pipeline time down from roughly 45 minutes to about 10 minutes on average.",
 ];
 
 export const projectsHighlights = [
@@ -94,19 +96,20 @@ export const projectsHighlights = [
     ],
   },
   {
-    title: "DC Modal and data preview work",
+    title: "Data preview and product workflow work",
     tech: "React, TypeScript, internal APIs, component tests",
     description:
       "Product development and quality work for a project involving data sync, opening, editing, and preview workflows.",
     details: [
       "Served as the sole QE while partnering closely with Software Engineers on delivery, risk, bug turnaround, and release readiness.",
-      "Implemented Preview UI updates, including a reusable worksheet column and row statistics component, header updates, and supporting tests.",
+      "Implemented data preview UI updates, including a reusable worksheet column and row statistics component, header updates, and supporting tests.",
     ],
   },
   {
     title: "Robotic car capstone",
     tech: "C, Raspberry Pi, PWM, infrared sensors",
-    description: "An autonomous Raspberry Pi car built as a Computer Engineering capstone project.",
+    description:
+      "An autonomous Raspberry Pi car built as my Penn State Computer Engineering senior capstone.",
     details: [
       "Used infrared sensors and multithreaded C code with PWM control to manage real-world movement and scheduling constraints.",
       "Combined embedded systems work with the kind of practical debugging that still shapes how I approach software problems.",
