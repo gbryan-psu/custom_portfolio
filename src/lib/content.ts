@@ -1,4 +1,13 @@
-import { Code2, Compass, Mail, PanelsTopLeft, Sparkles, UserRound } from "lucide-react";
+import {
+  Code2,
+  Compass,
+  Flag,
+  Gamepad2,
+  Mail,
+  PanelsTopLeft,
+  Trophy,
+  UserRound,
+} from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import { NavItem } from "@/lib/types";
 
@@ -32,9 +41,9 @@ export const asideContent = {
       "Keep growing these into deeper case studies with architecture notes, screenshots, constraints, and measurable outcomes.",
   },
   hobbies: {
-    eyebrow: "Current focus",
+    eyebrow: "Off hours",
     description:
-      "Keep learning through small builds, UI experiments, and hands-on technical practice.",
+      "Baseball, golf, games with friends, and early plans for a game development project.",
   },
   contact: {
     eyebrow: "Best fit",
@@ -138,20 +147,20 @@ export const projectsHighlights = [
     title: "Custom Playwright framework",
     tech: "TypeScript, Playwright, Azure DevOps, Python",
     description:
-      "A reusable end-to-end automation framework I designed, maintain, document, and help other engineers adopt.",
+      "A reusable end-to-end automation framework I developed, maintain, and help other engineers adopt.",
     details: [
-      "Supports page object patterns, authentication handling, multi-context web testing, staging/live smoke checks, HTML reporting, and targeted notifications.",
+      "Supports page object patterns, authentication handling, multi-context web testing, staging/live smoke checks, reporting, and targeted notifications.",
       "Improved CI feedback by adding sharding to a Playwright suite, reducing pipeline runtime from roughly 45 minutes to about 10 minutes on average.",
     ],
   },
   {
-    title: "Data preview and product workflow work",
-    tech: "React, TypeScript, internal APIs, component tests",
+    title: "Product UI and workflow work",
+    tech: "React, TypeScript, component tests",
     description:
-      "Product development and quality work for a project involving data sync, opening, editing, and preview workflows.",
+      "Product development and quality work across feature projects involving UI updates, workflow improvements, and release-ready implementation support.",
     details: [
-      "Served as the sole QE while partnering closely with Software Engineers on delivery, risk, bug turnaround, and release readiness.",
-      "Implemented data preview UI updates, including a reusable worksheet column and row statistics component, header updates, and supporting tests.",
+      "Partnered closely with Software Engineers on delivery, risk, bug turnaround, and release readiness across product work.",
+      "Implemented React and TypeScript UI updates, reusable components, workflow enhancements, and supporting tests across multiple feature areas.",
     ],
   },
   {
@@ -168,15 +177,27 @@ export const projectsHighlights = [
 
 export const hobbiesHighlights = [
   {
-    title: "Creative tinkering",
+    title: "Baseball",
     description:
-      "I like using personal projects to practice UI ideas, React patterns, and the product instincts I want to bring into a software engineering role.",
-    icon: Sparkles,
+      "I played baseball for more than 20 years, so it has been one of the biggest constants in my life. I recently stopped playing, but it is still a huge part of who I am.",
+    icon: Trophy,
   },
   {
-    title: "Technical curiosity",
+    title: "Golf",
     description:
-      "I keep exploring frontend architecture, automation tooling, CI/CD practices, and the details that make software easier for teams to trust.",
+      "After stepping away from baseball, I picked up golf and have been enjoying having a new sport to work on.",
+    icon: Flag,
+  },
+  {
+    title: "Video games",
+    description:
+      "I love playing games with friends, especially World of Warcraft, Counter-Strike 2, and whatever random game our group decides to try next.",
+    icon: Gamepad2,
+  },
+  {
+    title: "Game development",
+    description:
+      "A friend and I are planning a game development project. We have not started building yet, but it is something I am excited to start once this site is finished.",
     icon: Code2,
   },
 ];

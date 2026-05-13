@@ -8,17 +8,17 @@ export default function ProjectsPage() {
     <PageMain className="background-effect">
       <PageHero
         eyebrow="Projects"
-        title="Projects that show the bridge from quality ownership to software engineering."
-        description="My work spans frontend development, reusable automation systems, CI/CD improvements, backend integration support, and embedded systems. I am especially interested in projects where maintainable code, reliable behavior, and user experience all matter at once."
+        title="Projects that reflect my passion for building reliable systems, thoughtful interfaces, and useful tools."
+        description="My work spans frontend development, reusable automation systems, CI/CD improvements, and embedded systems. These projects reflect the kind of practical, reliable, user-minded engineering work I enjoy most."
         actionKey="github"
         asideKey="projects"
       />
 
       <section className="mt-8 px-6 py-8 sm:px-8">
         <SectionIntro
-          eyebrow="Selected work"
-          title="Specific work with clear technical ownership."
-          description="These projects highlight the skills I want to keep growing in a Software Engineering role: TypeScript, React, reusable systems, automation, CI/CD, API integration, and practical debugging."
+          eyebrow="What I build"
+          title="Practical projects shaped by curiosity, reliability, and real technical ownership."
+          description="This work brings together the areas I enjoy growing in most, including TypeScript, React, reusable systems, automation, CI/CD, and practical debugging."
         />
 
         <div className="mt-8 grid gap-4 lg:grid-cols-2">

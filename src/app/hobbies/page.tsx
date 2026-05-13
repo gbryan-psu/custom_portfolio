@@ -8,16 +8,16 @@ export default function HobbiesPage() {
     <PageMain className="background-effect">
       <PageHero
         eyebrow="Hobbies"
-        title="The curiosity outside the role that keeps the engineering work moving."
-        description="Personal projects give me room to practice the software engineering skills I am building toward: frontend polish, reusable components, interaction details, and the patience to keep iterating until something feels right."
+        title="Sports, games, and the hobbies that fill my time outside work."
+        description="Baseball was a major part of my life for more than 20 years. Since recently stepping away from playing, I have started getting into golf, still spend some time playing games with friends, and have been planning a small game development project."
         asideKey="hobbies"
       />
 
       <section className="mt-8 px-6 py-8 sm:px-8">
         <SectionIntro
           eyebrow="Outside of work"
-          title="Side projects make the transition more concrete."
-          description="They let me practice the skills I want to use every day while giving future teams something real to evaluate beyond a resume."
+          title="Sports, games, and a few interests that have stuck with me."
+          description="This page is a more personal look at the hobbies I have spent the most time with, the ones I am picking up now, and the projects I am excited to explore next."
         />
 
         <div className="mt-8 grid gap-4 md:grid-cols-2">
