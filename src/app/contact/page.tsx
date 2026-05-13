@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ContactMessageDialog } from "@/components/general/contactMessageDialog";
 import { PageHero } from "@/components/general/pageHero";
 import { SectionIntro } from "@/components/general/sectionIntro";
 import { PageMain } from "@/components/general/pageMain";
@@ -9,8 +10,9 @@ export default function ContactPage() {
     <PageMain className="background-effect">
       <PageHero
         eyebrow="Contact"
-        title="Open to Software Engineering conversations."
-        description="I am looking for Software Engineering opportunities where I can build product software, keep growing in React and TypeScript, and bring the reliability, automation, and customer-facing judgment I developed as a Quality Engineer."
+        title="Open to conversations about software engineering roles and product work."
+        description="I am looking for Software Engineering opportunities where I can build reliable product software, keep growing across the stack, and bring the ownership, automation experience, and product judgment I have developed as a Quality Engineer."
+        action={<ContactMessageDialog />}
         asideKey="contact"
       />
 
@@ -18,8 +20,8 @@ export default function ContactPage() {
         <div className="grid grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-8">
           <SectionIntro
             eyebrow="Reach out"
-            title="Let's talk about the next engineering step."
-            description="Email is the easiest way to reach me. LinkedIn has the fuller career timeline, including my Minitab experience and current Software Engineering transition."
+            title="The easiest way to start a conversation."
+            description="Email is the best way to reach me directly. LinkedIn has the fuller career timeline, including my Minitab experience, project work, and current move toward Software Engineering."
           />
 
           <div className="grid gap-4">

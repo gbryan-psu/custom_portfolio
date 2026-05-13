@@ -14,7 +14,6 @@ import { NavItem } from "@/lib/types";
 export const siteMeta = {
   name: "Gabien Bryan",
   title: "Quality Engineer transitioning into Software Engineering",
-  location: "Based in Philadelphia",
   blurb:
     "Quality Engineer at Minitab building toward Software Engineering through product development, automation framework ownership, and reliable delivery.",
   email: "gabienbryan99@gmail.com",
@@ -48,7 +47,7 @@ export const asideContent = {
   contact: {
     eyebrow: "Best fit",
     description:
-      "Teams that value thoughtful product work, reliable delivery, TypeScript, React, automation, and strong collaboration between development and quality.",
+      "Teams building reliable product software with strong engineering practices, automation, and close collaboration between development and quality.",
   },
 } as const;
 

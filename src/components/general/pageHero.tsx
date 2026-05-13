@@ -7,12 +7,14 @@ export function PageHero({
   title,
   description,
   actionKey,
+  action,
   asideKey,
 }: Readonly<{
   eyebrow: string;
   title: string;
   description: string;
   actionKey?: actionKey;
+  action?: React.ReactNode;
   asideKey?: asideKey;
 }>) {
   return (
@@ -33,6 +35,7 @@ export function PageHero({
               <HeroAction contentKey={actionKey} />
             </div>
           ) : null}
+          {action ? <div className="pt-2">{action}</div> : null}
         </div>
         {asideKey ? <Aside contentKey={asideKey} /> : null}
       </div>
