@@ -10,16 +10,7 @@ export default function HobbiesPage() {
         eyebrow="Hobbies"
         title="The curiosity outside the role that keeps the engineering work moving."
         description="Personal projects give me room to practice the software engineering skills I am building toward: frontend polish, reusable components, interaction details, and the patience to keep iterating until something feels right."
-        aside={
-          <div className="space-y-3">
-            <p className="font-mono text-[0.72rem] tracking-[0.34em] text-white/45 uppercase">
-              Current focus
-            </p>
-            <p>
-              Keep learning through small builds, UI experiments, and hands-on technical practice.
-            </p>
-          </div>
-        }
+        asideKey="hobbies"
       />
 
       <section className="mt-8 px-6 py-8 sm:px-8">

@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { ArrowDown } from "lucide-react";
 import { BackgroundEffects } from "@/components/home/backgroundEffects";
+import { HeroAction } from "@/components/general/heroAction";
 import { PageMain } from "@/components/general/pageMain";
 import { SectionIntro } from "@/components/general/sectionIntro";
 import { InfoCard } from "@/components/home/infoCard";
@@ -39,18 +39,8 @@ export default function HomePage() {
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4">
-                  <Link
-                    href="/projects"
-                    className="styled-button transition-all duration-300 hover:-translate-y-0.5"
-                  >
-                    View projects
-                  </Link>
-                  <Link
-                    href="/about"
-                    className="reg-button transition-all duration-300 hover:-translate-y-0.5"
-                  >
-                    Learn more
-                  </Link>
+                  <HeroAction contentKey="projects" />
+                  <HeroAction contentKey="about" />
                 </div>
               </div>
 

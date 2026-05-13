@@ -1,13 +1,19 @@
+import { Aside } from "@/components/general/heroAside";
+import { HeroAction } from "@/components/general/heroAction";
+import { type actionKey, type asideKey } from "@/lib/content";
+
 export function PageHero({
   eyebrow,
   title,
   description,
-  aside,
+  actionKey,
+  asideKey,
 }: Readonly<{
   eyebrow: string;
   title: string;
   description: string;
-  aside?: React.ReactNode;
+  actionKey?: actionKey;
+  asideKey?: asideKey;
 }>) {
   return (
     <section className="basic-panel mt-8 px-6 py-10 sm:px-8 lg:px-10">
@@ -22,12 +28,13 @@ export function PageHero({
           <p className="max-w-2xl text-base leading-8 text-[var(--color-text-muted)]">
             {description}
           </p>
+          {actionKey ? (
+            <div className="pt-2">
+              <HeroAction contentKey={actionKey} />
+            </div>
+          ) : null}
         </div>
-        {aside ? (
-          <div className="border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.035),rgba(255,255,255,0.015))] p-5 text-sm leading-7 text-[var(--color-text-muted)] shadow-[0_14px_36px_rgba(0,0,0,0.22)]">
-            {aside}
-          </div>
-        ) : null}
+        {asideKey ? <Aside contentKey={asideKey} /> : null}
       </div>
     </section>
   );

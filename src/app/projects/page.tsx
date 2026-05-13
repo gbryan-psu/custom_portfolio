@@ -10,17 +10,8 @@ export default function ProjectsPage() {
         eyebrow="Projects"
         title="Projects that show the bridge from quality ownership to software engineering."
         description="My work spans frontend development, reusable automation systems, CI/CD improvements, backend integration support, and embedded systems. I am especially interested in projects where maintainable code, reliable behavior, and user experience all matter at once."
-        aside={
-          <div className="space-y-3">
-            <p className="font-mono text-[0.72rem] tracking-[0.34em] text-white/45 uppercase">
-              Current goal
-            </p>
-            <p>
-              Keep growing these into deeper case studies with architecture notes, screenshots,
-              constraints, and measurable outcomes.
-            </p>
-          </div>
-        }
+        actionKey="github"
+        asideKey="projects"
       />
 
       <section className="mt-8 px-6 py-8 sm:px-8">

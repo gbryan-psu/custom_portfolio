@@ -10,17 +10,7 @@ export default function AboutPage() {
         eyebrow="About"
         title="Software engineering growth backed by product delivery, automation ownership, and implementation work."
         description="My title is Quality Engineer, but my recent work has moved steadily into implementation. I build React UI, maintain TypeScript automation, improve CI feedback, and contribute directly to features that reach real users."
-        aside={
-          <div className="space-y-3">
-            <p className="font-mono text-[0.72rem] tracking-[0.34em] text-white/45 uppercase">
-              Working style
-            </p>
-            <p>
-              Calm collaboration, strong ownership, fast learning, and comfort working across code,
-              tests, pipelines, and release decisions.
-            </p>
-          </div>
-        }
+        asideKey="about"
       />
 
       <section className="mt-8 px-8 py-8">

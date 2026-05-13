@@ -11,17 +11,7 @@ export default function ContactPage() {
         eyebrow="Contact"
         title="Open to Software Engineering conversations."
         description="I am looking for Software Engineering opportunities where I can build product software, keep growing in React and TypeScript, and bring the reliability, automation, and customer-facing judgment I developed as a Quality Engineer."
-        aside={
-          <div className="space-y-3">
-            <p className="font-mono text-[0.72rem] tracking-[0.34em] text-white/45 uppercase">
-              Best fit
-            </p>
-            <p>
-              Teams that value thoughtful product work, reliable delivery, TypeScript, React,
-              automation, and strong collaboration between development and quality.
-            </p>
-          </div>
-        }
+        asideKey="contact"
       />
 
       <section className="mt-8 px-8 py-8">

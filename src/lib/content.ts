@@ -1,4 +1,5 @@
 import { Code2, Compass, Mail, PanelsTopLeft, Sparkles, UserRound } from "lucide-react";
+import { SiGithub } from "react-icons/si";
 import { NavItem } from "@/lib/types";
 
 export const siteMeta = {
@@ -18,6 +19,54 @@ export const navItems: NavItem[] = [
   { href: "/hobbies", label: "Hobbies" },
   { href: "/contact", label: "Contact" },
 ];
+
+export const asideContent = {
+  about: {
+    eyebrow: "Working style",
+    description:
+      "Calm collaboration, strong ownership, fast learning, and comfort working across code, tests, pipelines, and release decisions.",
+  },
+  projects: {
+    eyebrow: "Current goal",
+    description:
+      "Keep growing these into deeper case studies with architecture notes, screenshots, constraints, and measurable outcomes.",
+  },
+  hobbies: {
+    eyebrow: "Current focus",
+    description:
+      "Keep learning through small builds, UI experiments, and hands-on technical practice.",
+  },
+  contact: {
+    eyebrow: "Best fit",
+    description:
+      "Teams that value thoughtful product work, reliable delivery, TypeScript, React, automation, and strong collaboration between development and quality.",
+  },
+} as const;
+
+export type asideKey = keyof typeof asideContent;
+
+export const actionContent = {
+  projects: {
+    href: "/projects",
+    label: "View projects",
+    external: false,
+    icon: PanelsTopLeft,
+  },
+  about: {
+    href: "/about",
+    label: "Learn more",
+    external: false,
+    icon: UserRound,
+  },
+  github: {
+    href: "https://github.com/gbryan-psu",
+    label: "View GitHub",
+    external: true,
+    icon: SiGithub,
+  },
+} as const;
+
+export type actionKey = keyof typeof actionContent;
 
 export const homeInfoCards = [
   {
