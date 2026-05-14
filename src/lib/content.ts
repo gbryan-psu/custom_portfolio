@@ -39,11 +39,6 @@ export const asideContent = {
     description:
       "Keep growing these into deeper case studies with architecture notes, screenshots, constraints, and measurable outcomes.",
   },
-  hobbies: {
-    eyebrow: "Off hours",
-    description:
-      "Baseball, golf, games with friends, and early plans for a game development project.",
-  },
   contact: {
     eyebrow: "Best fit",
     description:
@@ -111,14 +106,13 @@ export const homeNavigationCards = [
   {
     href: "/hobbies",
     title: "Hobbies",
-    description: "The curiosity, side quests, and interests that keep my perspective fresh.",
+    description: "The 5 to 9 after my 9 to 5.",
     icon: Compass,
   },
   {
     href: "/contact",
     title: "Contact",
-    description:
-      "A straightforward way to talk about software engineering roles and collaboration.",
+    description: "Welcoming any conversations about software engineering roles and what's next.",
     icon: Mail,
   },
 ];
@@ -178,13 +172,13 @@ export const hobbiesHighlights = [
   {
     title: "Baseball",
     description:
-      "I played baseball for more than 20 years, so it has been one of the biggest constants in my life. I recently stopped playing, but it is still a huge part of who I am.",
+      "I have played baseball for over 20 years and it is still a passion of mine even though I no longer play competetively.",
     icon: Trophy,
   },
   {
     title: "Golf",
     description:
-      "After stepping away from baseball, I picked up golf and have been enjoying having a new sport to work on.",
+      "After stepping away from competetive baseball, I picked up golf and have been enjoying a new sport to improve in.",
     icon: Flag,
   },
   {
@@ -196,7 +190,7 @@ export const hobbiesHighlights = [
   {
     title: "Game development",
     description:
-      "A friend and I are planning a game development project. We have not started building yet, but it is something I am excited to start once this site is finished.",
+      "A friend and I are planning a game development project. We have just recently started, and I'm very excited to tackle my next passion project.",
     icon: Code2,
   },
 ];

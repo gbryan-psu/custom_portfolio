@@ -6,17 +6,10 @@ import { hobbiesHighlights } from "@/lib/content";
 export default function HobbiesPage() {
   return (
     <PageMain className="background-effect">
-      <PageHero
-        eyebrow="Hobbies"
-        title="Sports, games, and the hobbies that fill my time outside work."
-        description="Baseball was a major part of my life for more than 20 years. Since recently stepping away from playing, I have started getting into golf, still spend some time playing games with friends, and have been planning a small game development project."
-        asideKey="hobbies"
-      />
-
       <section className="mt-8 px-6 py-8 sm:px-8">
         <SectionIntro
-          eyebrow="Outside of work"
-          title="Sports, games, and a few interests that have stuck with me."
+          eyebrow="Hobbies"
+          title="Sports, games, and the hobbies that fill my time outside work."
           description="This page is a more personal look at the hobbies I have spent the most time with, the ones I am picking up now, and the projects I am excited to explore next."
         />
 
