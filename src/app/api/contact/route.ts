@@ -115,8 +115,12 @@ export async function POST(request: Request) {
     return NextResponse.json({ message: "Email is invalid" }, { status: 400 });
   }
 
+  if (!trimmedMessage) {
+    return NextResponse.json({ message: "Message is required" }, { status: 400 });
+  }
+
   if (!process.env.GMAIL_USER || !process.env.GMAIL_PASS) {
-    return NextResponse.json({ message: "Email service is not configured" }, { status: 500 });
+    return NextResponse.json({ message: "Message service unavailable" }, { status: 500 });
   }
 
   const transporter = nodemailer.createTransport({
@@ -137,9 +141,9 @@ export async function POST(request: Request) {
         `Name: ${trimmedName || "Not provided"}`,
         `Email: ${trimmedEmail}`,
         "",
-        trimmedMessage || "No message provided.",
+        trimmedMessage,
       ].join("\n"),
-      html: `<p><b>Name:</b> ${escapeHtml(trimmedName || "Not provided")}<br/><b>Email:</b> ${escapeHtml(trimmedEmail)}<br/><b>Message:</b><br/>${escapeHtml(trimmedMessage || "No message provided.")}</p>`,
+      html: `<p><b>Name:</b> ${escapeHtml(trimmedName || "Not provided")}<br/><b>Email:</b> ${escapeHtml(trimmedEmail)}<br/><b>Message:</b><br/>${escapeHtml(trimmedMessage)}</p>`,
     });
 
     return NextResponse.json({ message: "Message sent successfully" });

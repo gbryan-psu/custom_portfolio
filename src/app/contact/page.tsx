@@ -23,8 +23,8 @@ export default function ContactPage() {
         asideKey="contact"
       />
 
-      <section className="mt-8 px-8 py-8">
-        <div className="grid grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-8">
+      <section className="mt-8 px-5 py-8 sm:px-8">
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
           <SectionIntro
             eyebrow="Reach out"
             title="The easiest way to start a conversation."
@@ -38,7 +38,7 @@ export default function ContactPage() {
               </p>
               <Link
                 href={`mailto:${siteMeta.email}`}
-                className="mt-3 inline-block font-display text-2xl font-medium tracking-[-0.04em] text-white transition-colors duration-300 hover:text-[var(--color-mint)]"
+                className="mt-3 inline-block font-display text-xl font-medium tracking-[-0.04em] break-all text-white transition-colors duration-300 hover:text-[var(--color-mint)] sm:text-2xl"
               >
                 {siteMeta.email}
               </Link>

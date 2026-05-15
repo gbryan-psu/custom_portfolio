@@ -21,8 +21,8 @@ export default function AboutPage() {
         asideKey="about"
       />
 
-      <section className="mt-8 px-8 py-8">
-        <div className="grid grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-8">
+      <section className="mt-8 px-5 py-8 sm:px-8">
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
           <SectionIntro
             eyebrow="How I work"
             title="I bring reliability and product thinking into implementation, not just testing."

@@ -13,7 +13,7 @@ export default function HomePage() {
       <section className="background-effect">
         <BackgroundEffects />
         <div className="relative z-10 mx-auto">
-          <div className="main-panel mx-auto w-full max-w-6xl animate-fade-in px-8 py-8 opacity-0">
+          <div className="main-panel mx-auto w-full max-w-6xl animate-fade-in px-5 py-8 opacity-0 sm:px-8">
             <div className="grid gap-10 lg:grid-cols-[1fr_260px] lg:items-end">
               <div className="space-y-10">
                 <div className="space-y-10">
@@ -23,7 +23,7 @@ export default function HomePage() {
                     </p>
                     <span className="section-kicker-line hidden sm:block" />
                   </div>
-                  <h1 className="font-display text-7xl leading-[0.9] font-bold tracking-[-0.06em] text-white">
+                  <h1 className="font-display text-4xl leading-[0.95] font-bold tracking-[-0.05em] text-white sm:text-5xl md:text-6xl lg:text-7xl lg:tracking-[-0.06em]">
                     <span className="block text-white/92">
                       Building software with a quality-first
                     </span>
@@ -78,8 +78,8 @@ export default function HomePage() {
       </section>
 
       <section className="relative">
-        <div className="overview-panel relative z-10 w-full animate-fade-in p-20 opacity-0">
-          <div className="grid grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-20">
+        <div className="overview-panel relative z-10 w-full animate-fade-in px-5 py-10 opacity-0 sm:px-8 lg:p-20">
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-20">
             <div className="space-y-8">
               <SectionIntro
                 eyebrow="Overview"

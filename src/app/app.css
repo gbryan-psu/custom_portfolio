@@ -152,6 +152,16 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
+@media (max-width: 639px) {
+  .nav-button {
+    min-height: 1.75rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    box-shadow: none;
+  }
+}
+
 .nav-button:hover {
   border-color: rgba(124, 255, 221, 0.7);
   background-color: rgba(124, 255, 221, 0.12);
