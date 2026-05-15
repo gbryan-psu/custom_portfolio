@@ -69,6 +69,9 @@ export function ContactMessageDialog() {
     setIsSending(true);
 
     try {
+      const formData = new FormData(event.currentTarget);
+      const website = String(formData.get("website") ?? "").trim();
+
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -76,6 +79,7 @@ export function ContactMessageDialog() {
           name: values.name.trim(),
           email: values.email.trim(),
           message: values.message.trim(),
+          website,
         }),
       });
 
@@ -145,6 +149,17 @@ export function ContactMessageDialog() {
             </div>
 
             <form className="mt-6 space-y-5" onSubmit={handleSubmit} noValidate>
+              <div className="pointer-events-none absolute -left-[100vw] h-px w-px overflow-hidden">
+                <label htmlFor="contact-website">Website</label>
+                <input
+                  id="contact-website"
+                  name="website"
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
+
               <div>
                 <label
                   htmlFor="contact-name"
