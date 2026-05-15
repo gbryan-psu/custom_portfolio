@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono, Manrope, Sora } from "next/font/google";
 import "./app.css";
 import Navbar from "@/components/general/navbar";
+import { siteMeta } from "@/lib/content";
+
+const siteUrl = new URL(siteMeta.url);
+const siteTitle = "Gabien Bryan | Quality Engineer to Software Engineer";
+const siteDescription =
+  "Gabien Bryan's portfolio, highlighting Quality Engineering experience, product development work, React and TypeScript projects, and a focused transition into Software Engineering.";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -23,9 +29,13 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gabien Bryan | Quality Engineer to Software Engineer",
-  description:
-    "Gabien Bryan's portfolio, highlighting Quality Engineering experience, product development work, React and TypeScript projects, and a focused transition into Software Engineering.",
+  metadataBase: siteUrl,
+  title: siteTitle,
+  description: siteDescription,
+  icons: {
+    icon: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
+  },
   keywords: [
     "Gabien Bryan",
     "Quality Engineer",
@@ -49,12 +59,12 @@ export const metadata: Metadata = {
     "Coding Portfolio",
     "Programming Projects",
   ],
-  authors: [{ name: "Gabien Bryan", url: "https://gabien-bryan.com" }],
-  creator: "Gabien Bryan",
+  authors: [{ name: siteMeta.name, url: siteMeta.url }],
+  creator: siteMeta.name,
   openGraph: {
-    title: "Gabien Bryan | Quality Engineer to Software Engineer",
+    title: siteTitle,
     description: "Explore Gabien Bryan's Quality Engineering background, experience, and projects.",
-    url: "https://gabien-bryan.com",
+    url: siteMeta.url,
     siteName: "Gabien Bryan Portfolio",
     type: "website",
     images: [
@@ -66,7 +76,48 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/og-image.png"],
+  },
 };
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: siteMeta.name,
+    url: siteMeta.url,
+    email: `mailto:${siteMeta.email}`,
+    jobTitle: "Quality Engineer transitioning into Software Engineering",
+    description:
+      "Quality Engineer focused on software engineering, React, TypeScript, product development, automation, CI/CD, and reliable web applications.",
+    sameAs: [siteMeta.github, siteMeta.linkedIn],
+    knowsAbout: [
+      "Software Engineering",
+      "Quality Engineering",
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Playwright",
+      "CI/CD",
+      "Test Automation",
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Gabien Bryan Portfolio",
+    url: siteMeta.url,
+    author: {
+      "@type": "Person",
+      name: siteMeta.name,
+    },
+    description: siteDescription,
+  },
+];
 
 export default function RootLayout({
   children,
@@ -76,6 +127,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.variable} ${sora.variable} ${plexMono.variable} antialiased`}>
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Navbar />
         {children}
       </body>

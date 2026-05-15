@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import { PageHero } from "@/components/general/pageHero";
 import { SectionIntro } from "@/components/general/sectionIntro";
 import { PageMain } from "@/components/general/pageMain";
 import { projectsHighlights } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Projects | Gabien Bryan",
+  description:
+    "Explore Gabien Bryan's portfolio projects across Next.js, React, TypeScript, Playwright automation, CI/CD, product UI work, and embedded systems.",
+};
 
 export default function ProjectsPage() {
   return (

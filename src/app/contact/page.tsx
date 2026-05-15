@@ -1,9 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ContactMessageDialog } from "@/components/general/contactMessageDialog";
 import { PageHero } from "@/components/general/pageHero";
 import { SectionIntro } from "@/components/general/sectionIntro";
 import { PageMain } from "@/components/general/pageMain";
 import { siteMeta } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Contact | Gabien Bryan",
+  description:
+    "Contact Gabien Bryan about Software Engineering opportunities, product engineering work, React, TypeScript, automation, and quality-focused development.",
+};
 
 export default function ContactPage() {
   return (

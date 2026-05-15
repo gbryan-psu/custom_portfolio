@@ -13,10 +13,12 @@ import { NavItem } from "@/lib/types";
 
 export const siteMeta = {
   name: "Gabien Bryan",
+  url: "https://gabien-bryan.com",
   title: "Quality Engineer transitioning into Software Engineering",
   blurb:
     "Quality Engineer at Minitab building toward Software Engineering through product development, automation framework ownership, and reliable delivery.",
   email: "gabienbryan99@gmail.com",
+  github: "https://github.com/gbryan-psu",
   linkedIn: "https://www.linkedin.com/in/gabien-bryan-a0a460159/",
 };
 
@@ -62,7 +64,7 @@ export const actionContent = {
     icon: UserRound,
   },
   github: {
-    href: "https://github.com/gbryan-psu",
+    href: siteMeta.github,
     label: "View GitHub",
     external: true,
     icon: SiGithub,

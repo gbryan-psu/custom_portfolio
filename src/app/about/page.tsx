@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import { PageHero } from "@/components/general/pageHero";
 import { SectionIntro } from "@/components/general/sectionIntro";
 import { PageMain } from "@/components/general/pageMain";
+
 import { aboutHighlights } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "About | Gabien Bryan",
+  description:
+    "Learn about Gabien Bryan's Quality Engineering background, product delivery experience, automation ownership, and transition into Software Engineering.",
+};
 
 export default function AboutPage() {
   return (

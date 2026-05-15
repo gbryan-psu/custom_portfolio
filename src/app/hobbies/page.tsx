@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import { SectionIntro } from "@/components/general/sectionIntro";
 import { PageMain } from "@/components/general/pageMain";
 import { hobbiesHighlights } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Hobbies | Gabien Bryan",
+  description:
+    "A personal look at Gabien Bryan's hobbies, including baseball, golf, video games, and early game development interests outside of work.",
+};
 
 export default function HobbiesPage() {
   return (
